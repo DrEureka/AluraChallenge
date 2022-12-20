@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,33 @@ body {
   background-color: #f3f5fc;
 }
 
+footer {
+  margin-top: 1rem;
+  text-align: center;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+ 
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+footer div div {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer div div img {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
 main {
   width: 100%;
   display: grid;
@@ -25,29 +54,29 @@ section.logo {
   text-align: center;
 }
 
-section.input,
-section.output {
+section.text-area,
+section.resultado {
   margin: 20px;
   padding: 20px 30px;
 }
 
-section.output {
+section.resultado {
   border-radius: 32px;
   box-shadow: 0 20px 40px rgba(120, 120, 120, 0.1);
   background-color: white;
 }
 
-section.input,
-section.output div {
+section.text-area,
+section.resultado div {
   display: flex;
   flex-direction: column;
 }
 
-section.input {
+section.text-area {
   padding-top: 100px;
 }
 
-section.input .informacion {
+section.text-area .information {
   color: #495057;
   opacity: 0.8;
   margin: 15px 0;
@@ -57,7 +86,7 @@ section.input .informacion {
   align-items: center;
 }
 
-section.output div {
+section.resultado div {
   width: 100%;
   height: 100%;
   align-items: center;
@@ -65,17 +94,17 @@ section.output div {
   text-align: center;
 }
 
-section.output div img {
+section.resultado div img {
   width: 80%;
 }
 
-section.output div h2 {
+section.resultado div h2 {
   margin: 20px;
   font-size: 25px;
   font-weight: bold;
 }
 
-section.output div p {
+section.resultado div p {
   font-size: 18px;
 }
 
@@ -91,7 +120,7 @@ textarea {
   background-color: transparent;
 }
 
-section.input textarea {
+section.text-area textarea {
   color: #0A3871;
 }
 
@@ -116,6 +145,7 @@ div.actions button:first-child {
   color: #fff;
 }
 
+
 @media (max-width: 1024px) {
   main {
     grid-template-rows: 100px 1fr auto;
@@ -126,23 +156,23 @@ div.actions button:first-child {
     text-align: left;
   }
 
-  section.input,
-  section.output {
+  section.text-area,
+  section.resultado {
     margin: 20px;
     padding: 20px 5px;
   }
 
-  section.output div {
+  section.resultado div {
     gap: 10px;
     padding: 10px;
   }
 
-  section.output div h2 {
+  section.resultado div h2 {
     margin: 0px;
     margin-bottom: 10px;
   }
 
-  section.output div img {
+  section.resultado div img {
     display: none;
   }
 
@@ -155,4 +185,28 @@ div.actions button:first-child {
   div.actions button {
     padding: 20px 20px;
   }
+  footer {
+    margin-top: 27rem;
+    text-align: center;
+  }
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+   
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 5px;
+  }
+  
+  footer div div {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  footer div div img {
+    height: 100%;
+    width: 100%;
+  }
+ 
 }

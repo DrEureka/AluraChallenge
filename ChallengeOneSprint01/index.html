@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Decodificador Texto</title>
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <section class="input">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador Texto</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="logo">
+        <img src="assets/img/logo.svg" alt="Logo Alura" />
+      </section>
+
+      <section class="text-area">
         <textarea
-          model="input"
-          placeholder="Escriba su texto"></textarea>
-  
+          name="texto-a-encriptar"
+          class="text-area"
+          id="texto-encriptar"
+          cols="70"
+          rows="10"
+          placeholder="Escriba el texto que desee codificar o descodificar..."
+        ></textarea>
+
         <div class="informacion">
-          <img src="assets/img/info.svg" alt="Icono informacion">
+          <img src="assets/img/info.svg" alt="Icono informacion" />
           <span>Los acentos seran ingnorados.</span>
         </div>
-  
+
         <div class="actions">
-          <button id="codificar">Codificar</button>
-          <button id="decodificar">Decodificar</button>
+          <button id="encriptar">Codificar</button>
+          <button id="desencriptar">Decodificar</button>
         </div>
       </section>
-  
-      <section class="output">
-        <div if="showOutput">
+
+      <section class="resultado">
+        <div>
           <textarea
-            model="output"
-            placeholder="Sin mensaje"></textarea>
+            name="resultado"
+            class="text-area"
+            id="resultado"
+            cols="70"
+            rows="10"
+            placeholder="El resultado se verá acá."
+          ></textarea>
+
           <button id="copiar">Copiar</button>
-        </div>
-        <div else>
-          <img src="assets/img/sinTexto.svg" alt="Sin texto para mostrar">
-          <h2>No se han encontrado mensajes</h2>
-          <p>Escriba el texto que desee codificar o descodificar...</p>
         </div>
       </section>
     </main>
-  
-    <script src="assets/js/index.js" type="modulo"></script>
-</body>
+
+    <footer>
+      <h6>Challenge 01 Alura, by Daniel Ramadan.</h6>
+      <div>
+        <div class="img-git">
+          <a href="https://github.com/DrEureka/" target="_blank"
+            ><img src="assets/img/git.png" alt="logo-git"
+          /></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/claves.js"></script>
+    <script src="js/encriptar.js"></script>
+    <script src="js/copiar.js"></script>
+    <script src="js/desencriptar.js"></script>
+    <script src="js/validarTexto.js"></script>
+  </body>
 </html>
