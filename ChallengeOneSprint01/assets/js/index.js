@@ -1,4 +1,6 @@
 import typeEffect from "./typeEffect.js"; // Importo la funcion typeEffect.
+import createStore from "./store.js"; // Importo la funcion createStore.
+import { ENCODER, DECODER } from "./dictionary.js";
 
 const store = createStore({
   // Creo un objeto que contiene los datos de la aplicacion.
