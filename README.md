@@ -15,4 +15,3 @@ Listado de codificación
 | a | e | i | o | u |
 |--|--|----|----|--
 | enter | imes | ai | ober | fat
-
